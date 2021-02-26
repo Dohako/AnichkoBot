@@ -14,7 +14,7 @@ while True:
     success, img = cap.read()
     
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    faces = face_detector.detectMultiScale(gray, 1.2,6)
+    faces = face_detector.detectMultiScale(gray, 1.1,5, minSize=(30,30))
 
     for(x,y,w,h) in faces:
         cv2.rectangle(img, (x,y),(x+w, y+h), (255,0,0),2)
