@@ -16,6 +16,6 @@ for voice in voices:
 
         tts.setProperty('voice', voice.id)
 
-tts.say('PrivEt')
+tts.say('Hello there')
 
 tts.runAndWait()
