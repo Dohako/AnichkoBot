@@ -11,6 +11,7 @@ void move_forward(int motor_speed) {
   analogWrite(SPEED_2, motor_speed);
   Serial.println("Moving forward");
 }
+
 void move_left(int motor_speed) {
   digitalWrite(DIR_1, LOW);
   analogWrite(SPEED_1, motor_speed);
